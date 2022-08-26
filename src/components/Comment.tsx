@@ -1,4 +1,5 @@
 import "./Comment.scss";
+import VoteButton from "./VoteButton";
 
 type CommentProps = {
     avatarName: string;
@@ -19,10 +20,7 @@ const Comment = ({ avatarName, userName, commentCreated, comment }: CommentProps
                 {comment}
             </p>
             <footer className="comment__footer">
-                <button className="comment__footer-button">
-                    <img src={`${process.env.PUBLIC_URL}/icon-reply.svg`} alt="" />
-                    <span>Reply</span>
-                </button>
+                <VoteButton />
                 <button className="comment__footer-button">
                     <img src={`${process.env.PUBLIC_URL}/icon-reply.svg`} alt="" />
                     <span>Reply</span>

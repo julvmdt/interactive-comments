@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+.vote-button-container {
+    background-color: $veryLightGray;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+
+    .vote-button {
+        border: none;
+        color: $lightGrayishBlue;
+        font-weight: 700;
+    }
+
+    .vote-count {
+        margin: 0 0.563rem;
+        color: $moderateBlue;
+        font-weight: 500;
+    }
+}
