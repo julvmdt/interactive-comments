@@ -1,0 +1,42 @@
+@import "../variables.scss";
+
+.comment-container {
+    margin: 2rem 1rem;
+    background-color: $white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    .comment__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        .comment__header-image {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .comment__header-user-name {
+            font-weight: 500;
+            color: $darkBlue;
+        }
+    }
+
+    .comment__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .comment__footer-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: $white;
+            border: none;
+            color: $moderateBlue;
+            font-weight: 500;
+        }
+    }
+}
